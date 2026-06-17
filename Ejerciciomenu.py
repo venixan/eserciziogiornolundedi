@@ -3,7 +3,6 @@ def validar_codigo_reserva(codigo, reservas):
         for r in reservas:
             if r["codigo_reserva"] == codigo:
                 return False
-            return True
         return True
     return False
 
@@ -15,7 +14,7 @@ def validar_nombre_solicitante(solicitante):
             return True
         
 def validar_tipo_sala(tipo_sala):
-    if tipo_sala() in ["P", "M", "G"]:
+    if tipo_sala.upper() in ["P", "M", "G"]:
         return True
     return False
 
